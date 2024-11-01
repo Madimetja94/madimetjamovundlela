@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="" rel="icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Madimetja Movundlela</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <!-- <div class="nav-logo">
+        <span class="nav-brand">Madimetja</span>
+      </div> -->
+      <div class="navbar-links" id="navbar-links">
+        <a href="#header">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      
+      <div id="nav-form">
+        <button type="button" id="menu-open"><img class="hamburger-icon" src="./img/open.png"></button>
+        <button type="button" id="menu-close"><img class="hamburger-icon" src="./img/close.png"></button>
+      </div>
+    </nav>
+    <header class="header" id="header">
+      <div class="bg-img"></div>
+      <div class="intro" id="intro">
+        <div class="headings">
+          <img
+            src="img/dp.png"
+            alt="display-picture"
+            id="dp"
+            class="display-picture"
+          />
+          <h3 class="heading-greeting">Hello, I'm</h3>
+          <h2 class="heading-name">Madimetja Movundlela</h2>
+          <h1>
+            I am a Full-stack web development student. I enjoy solving problems
+            using code.
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <h2 class="about-heading">About me:</h2>
+        <p class="biography">
+          I am a solution-driven person looking to contribute to a collaborative
+          work environment while increasing my knowledge. I am an enthusiastic individual commited to continue learning and grow. I approach problems with a positive mindset and view then as a opportunity to sharpen my skills
+        </p>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="skills-set">My Top Skills</h2>
+        <div class="skill-wrapper">
+          <img
+            class="skill-icon"
+            src="img/icons8-html-5.svg"
+            alt="html-logo"
+          />
+          <img class="skill-icon" src="img/icons8-css3.svg" alt="CSS Logo" />
+          <img
+            class="skill-icon"
+            src="img/icons8-javascript.svg"
+            alt="Javascript logo"
+          />
+          <img class="skill-icon" src="img/icons8-git.svg" alt="Git logo" />
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="project-wrapper">
+          <div class="project">
+            <img
+              src="img/redux-recipesearch.png"
+              alt="redux recipe search"
+              class="project-screenshot"
+            />
+            <h3>Redux Recipe Search</h3>
+            <p>
+              This project is a React-based web application that allows users to
+              search for recipes using a third-party API.
+            </p>
+          </div>
+
+          <div class="project">
+            <img
+              src="img/byox.png"
+              alt="BYOX"
+              class="project-screenshot"
+            />
+            <h3>BYOX</h3>
+            <p>Teamed up with a colleague at Umuzi to build BYOX. This a service that consist of a mobile component for the users and web component for the admin. It build using the PERN stack.</p>
+          </div>
+
+          <div class="project">
+            <img
+              src="img/memorygame.png"
+              alt="Memory game"
+              class="project-screenshot"
+            />
+            <h3>Memory Game</h3>
+            <p>
+              A memory game web app written using React and redux. Users can
+              adjust the grid sizes, and see how long it took them to complete
+              the game
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="names">Names:</label><br />
+          <input type="text" name="names" id="names" required /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            id="email"
+            required
+          /><br />
+          <label for="message">Message:</label><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="4"
+            id="message"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <p id="success-message"></p>
+      </section>
+    </main>
+  </body>
+ 
+  <footer>
+    <p>&copy;2024 Madimetja F. Movundlela</p>
+  </footer>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #24201f;
+  color: beige;
+  text-align: center;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  color: beige;
+  padding-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  padding-top: 20px;
+  background-color: #2c2155;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: beige;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #2c2155;
+}
+.navbar-links {
+  padding-left: 100px;
+  width: 100%;
+}
+.navbar-links a {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.header .bg-img {
+  background: url("https://images.unsplash.com/photo-1705875999426-b2899c13a70c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.headings {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.display-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heading-greeting {
+  font-size: 1.5em;
+  margin: 0;
+  color: #f9a825;
+}
+
+.heading-name {
+  font-size: 2.5em;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #f9a825;
+}
+
+.about,
+.skills,
+.contact {
+  padding: 50px 20px;
+}
+
+.about,
+.skills,
+.contact,
+.projects {
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(36, 65, 75, 0.9);
+}
+
+.biography {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.skills-set {
+  color: #f9a825;
+}
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  height: 220px;
+  width: 220px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-screenshot {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  color: #f9a825;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.project p {
+  color: beige;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f9a825;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #39373c;
+  color: beige;
+}
+
+.submit-button {
+  background-color: #808ba5;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#menu-open,
+#menu-close {
+  background-color: #2c2155;
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #0d052c;
+  padding: 20px;
+  color: beige;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#nav-form {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 812px) {
+  #nav-form {
+    display: block;
+  }
+
+  .navbar-links a {
+    display: block;
+    padding: 15px;
+    position: relative;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+}
